@@ -16,7 +16,7 @@ public class Utils {
             " ("+ COLUMN_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, "+
             COLUMN_NAME+" TEXT NOT NULL, "+
             COLUMN_USER_CONTACT+" TEXT NOT NULL, "+
-            COLUMN_USER_EMAIL+" TEXT NOT NULL, "+
+            COLUMN_USER_EMAIL+" TEXT NOT NULL UNIQUE, "+
             COLUMN_USER_URL+" TEXT NOT NULL, "+
             COLUMN_USER_PASSWORD+ " TEXT NOT NULL) ";
 
@@ -44,7 +44,7 @@ public class Utils {
     public static final String ENTITY_IMAGE = "CREATE TABLE "+TABLE_NAME_IMAGE+
             " ("+COLUMN_ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
             COLUMN_IMAGE_URL+" TEXT NOT NULL, "+
-            COLUMN_IMAGE_ID_PRODUCT+ " TEXT NOT NULL) ";
+            COLUMN_IMAGE_ID_PRODUCT+ " INTEGER UNIQUE NOT NULL) ";
 
     public static final String TABLE_NAME_CART="CART";
     public static final String COLUMN_CART_PRODUCT_ID="idProduct";

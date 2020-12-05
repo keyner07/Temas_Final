@@ -5,12 +5,7 @@ import android.content.ContentValues;
 import com.pucmm.finalecommerce.utils.Utils;
 
 public class User {
-    public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_NAME= "name";
-    public static final String COLUMN_USER_CONTACT = "contact";
-    public static final String COLUMN_USER_EMAIL="email";
-    public static final String COLUMN_USER_PASSWORD= "password";
-    private String _id;
+    private long _id;
     private String name;
     private String contact;
     private String email;
@@ -25,12 +20,11 @@ public class User {
         this.url = url;
     }
 
-    public User(String name, String contact, String email, String password, String url,String _id) {
+    public User(long _id,String name, String contact, String email, String url) {
         this._id = _id;
         this.name = name;
         this.contact = contact;
         this.email = email;
-        this.password = password;
         this.url = url;
     }
 
