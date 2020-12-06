@@ -31,12 +31,14 @@ public class Utils {
     public static final String COLUMN_PRODUCT_DESCRIPTION="description";
     public static final String COLUMN_PRODUCT_QUANTITY="quantity";
     public static final String COLUMN_PRODUCT_PRICE="price";
+    public static final String COLUMN_PRODUCT_CATEGORY_ID="idCategory";
     public static final String ENTITY_PRODUCT = "CREATE TABLE "+ TABLE_NAME_PRODUCT+
             " ("+ COLUMN_ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
             COLUMN_NAME+" TEXT NOT NULL, "+
             COLUMN_PRODUCT_DESCRIPTION+" TEXT NOT NULL, "+
             COLUMN_PRODUCT_PRICE+" INTEGER NOT NULL, "+
-            COLUMN_PRODUCT_QUANTITY+" INTEGER NOT NULL) ";
+            COLUMN_PRODUCT_QUANTITY+" INTEGER NOT NULL, "+
+            COLUMN_PRODUCT_CATEGORY_ID+" INTEGER NOT NULL) ";
 
     public static final String TABLE_NAME_IMAGE="IMAGE";
     public static final String COLUMN_IMAGE_URL = "url";

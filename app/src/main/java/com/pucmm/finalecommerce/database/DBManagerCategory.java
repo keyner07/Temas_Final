@@ -44,4 +44,12 @@ public class DBManagerCategory extends DBManager {
     public boolean delete(long i) {
         return database.delete(Utils.TABLE_NAME_CATEGORY,Utils.COLUMN_ID + "="+ i,null) == 1;
     }
+    public String getNameCategoryById(long id){
+        Cursor cursor = this.database.rawQuery("SELECT * FROM "+Utils.TABLE_NAME_CATEGORY+" WHERE "+Utils.COLUMN_ID+" = ?", new String[]{String.valueOf(id)});
+        if(cursor != null && cursor.getCount() > 0){
+            cursor.moveToFirst();
+            return cursor.getString(cursor.getColumnIndexOrThrow(Utils.COLUMN_NAME));
+        }
+        return "sin-asignar";
+    }
 }

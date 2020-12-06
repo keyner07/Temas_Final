@@ -10,16 +10,33 @@ public class Product {
     private String name;
     private String description;
     private ArrayList<String> images;
+    private String image;
     private int quantity;
     private int price;
+    private int idCategory;
 
-    public Product(long uid, String name, String description, ArrayList<String> images, int quantity, int price) {
+    public Product(long uid, String name, String description, ArrayList<String> images, int quantity, int price, int idCategory) {
         this.uid = uid;
         this.name = name;
         this.description = description;
         this.images = images;
         this.quantity = quantity;
         this.price = price;
+        this.idCategory = idCategory;
+    }
+
+    public Product(long uid, String name, String description, String image, int quantity, int price, int idCategory) {
+        this.uid = uid;
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.quantity = quantity;
+        this.price = price;
+        this.idCategory = idCategory;
+    }
+
+    public String getImage() {
+        return image;
     }
 
     public long getUid() {
