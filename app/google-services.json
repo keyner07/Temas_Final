@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "868290599354",
+    "project_id": "temasespeciales-455d5",
+    "storage_bucket": "temasespeciales-455d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868290599354:android:edfabeb519af32e6636583",
+        "android_client_info": {
+          "package_name": "com.pucmm.finalecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868290599354-fp65sur8svi3lomq7nekbji0n0o4263g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pucmm.finalecommerce",
+            "certificate_hash": "f8daf8824e6a815cd1c592c0aeeaad03c89122ea"
+          }
+        },
+        {
+          "client_id": "868290599354-g98dtgnfd8g6oqa41v41fbcko23d54j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGYi2v2kzwTNvpwMO7F5CgLhMnMwWAfzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868290599354-g98dtgnfd8g6oqa41v41fbcko23d54j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
